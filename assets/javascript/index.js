@@ -23,22 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             titulo: "Nuestras Raquetas",
             descripcion: "Conoce nuestras raquetas y aprende a jugar Tennis como un profesional.",
-            fondo: "assets/img/ball-color-court-1405355.jpg"
+            fondo: "assets/img/ball-color-court-1405355.webp"
         },
         {
             titulo: "Raqueta Intermedia",
             descripcion: "Perfecta para quienes están mejorando su juego.",
-            fondo: "assets/img/ball-color-court-1405355.jpg"
+            fondo: "assets/img/ball-color-court-1405355.webp"
         },
         {
             titulo: "Raqueta Principiante",
             descripcion: "Ideal para quienes están empezando en el tenis.",
-            fondo: "assets/img/ball-color-court-1405355.jpg"
+            fondo: "assets/img/ball-color-court-1405355.webp"
         },
         {
             titulo: "Raqueta de Competición",
             descripcion: "Diseñada para torneos y alto rendimiento.",
-            fondo: "assets/img/ball-color-court-1405355.jpg"
+            fondo: "assets/img/ball-color-court-1405355.webp"
         }
     ];
 
@@ -85,17 +85,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     btnNext.addEventListener("click", () => {
-        if (index < raquetas.length - 1) {
+        // Si llegamos al último índice, volvemos al primer elemento
+        if (index === raquetas.length - 1) {
+            index = 0;
+        } else {
             index++;
-            actualizarCarrusel();
         }
+        actualizarCarrusel();
     });
 
     btnPrev.addEventListener("click", () => {
-        if (index > 0) {
+        // Si estamos en el primer índice, volvemos al último elemento
+        if (index === 0) {
+            index = raquetas.length - 1;
+        } else {
             index--;
-            actualizarCarrusel();
         }
+        actualizarCarrusel();
     });
 
     indicadores.forEach((btn) => {
