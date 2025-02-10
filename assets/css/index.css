@@ -67,7 +67,7 @@
     position: absolute;
     top: 80px; /* Ajusta la posición según sea necesario */
     right: 0;
-    background-color: var(--dark);
+    background-color: var(--sickly-yellow);
     width: 100%;
     padding: 20px;
 }
@@ -80,6 +80,7 @@
     text-decoration: none;
     padding-bottom: 10px;
 }
+
 
 .cambiarIdioma {
     display: flex;
@@ -136,6 +137,7 @@
     font-size: 48px;
     color: var(--white);
     font-weight: normal;
+    width: 60%;
 }
 .groupTennis > div > h1 > span{
     font-size: 45.5px;
@@ -147,7 +149,7 @@
     border-radius: 26.5px;
     border: solid 1px var(--white);
     background: none;
-    margin-top: 30px;
+    margin-top: 25px;
     color: var(--white);
     display: flex;
     flex-direction: row;
@@ -199,7 +201,7 @@
     font-style: normal;
 }
 .groupAccesoriosRaquetas > p{
-    margin-top: 40px;
+    margin-top: 25px;
     color: var(--warm-grey);
     line-height: 1.78;
 
@@ -425,7 +427,7 @@
 
 /* Para pantallas pequeñas, como móviles */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .headerTennis {
         padding: 20px;
     }
@@ -465,6 +467,7 @@
         width: 100%;
         padding: 10px 20px;
         font-size: 14px;
+        width: 250px;
     }
 }
 
@@ -493,6 +496,7 @@
     }
     .groupTennis > div > h1 {
         font-size: 40px;
+        width: 100%;
     }
     .groupTennis > div > h1 > span {
         font-size: 38px;
@@ -500,7 +504,8 @@
     .groupAccesorios {
         flex-direction: column;
         padding-left: 25px;
-        margin-bottom: 50px;
+    
+        height: auto;
     }
     .groupAccesoriosTennis{ 
         text-align: start;
@@ -519,8 +524,8 @@
     .groupAccesoriosHistoria{
         width: 100%;
     }
-    .groupAccesoriosHistoria > button{
-        margin: 40px 0 0;   
+    .groupAccesoriosHistoria > a{
+        margin: 25px 0 0;   
     }
 
     .rectangulo {
@@ -536,22 +541,36 @@
         display: none;
     }
 
-    .pelotaC{
+    .pelotaC {
         position: absolute;
-        top: 60px;
-        right: 5px;
+        top: -30%;
+        right: 40%;
     }
     .enlaces-footer{
         display: flex;
         gap: 20px;
+        flex-direction: column;
+    }
+    .footerTennis {
+        
+        padding-top: 60px;
     }
     .footerTennis > div{
         padding: 20px;
         position: relative;
+        display: flex;
+        flex-direction: column-reverse;
     }
+    .footerTennis > div > div {
+        padding: 0px 0px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
     .groupRaquetas { 
         flex-direction: column;
-        height: 775px;
+        height: auto;
+        margin-bottom: 10px;
         
     }
     .groupRaquetas-carrusel {
@@ -586,9 +605,17 @@
         margin-top: 20px;
     }
     .groupRaquetas-slider > div > img {
-        width: 140px;
+        width: 90px;
     }
-    
+    .pelotaB{
+        display: none;
+    }
+    .antescarrusel{
+        left: 19%;
+    }
+    .siguientecarrusel{
+        right: 55%;
+    }
 }
 
 /* Para pantallas grandes de escritorio */
@@ -616,6 +643,7 @@
 
     .groupTennis > div > h1 {
         font-size: 48px;
+        width: 60%;
     }
 
     .groupTennis > div > h1 > span {
