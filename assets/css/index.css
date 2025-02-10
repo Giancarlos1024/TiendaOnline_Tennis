@@ -503,8 +503,8 @@
     }
     .groupAccesorios {
         flex-direction: column;
-        padding-left: 25px;
-    
+        padding-left: 47px;
+        
         height: auto;
     }
     .groupAccesoriosTennis{ 
@@ -523,6 +523,7 @@
     }
     .groupAccesoriosHistoria{
         width: 100%;
+        padding-left: 0px;
     }
     .groupAccesoriosHistoria > a{
         margin: 25px 0 0;   
@@ -575,9 +576,10 @@
     }
     .groupRaquetas-carrusel {
         background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         padding-top: 50px;
-        padding-left: 70px;
+        padding-left: 47px;
         padding-right: 80px;
         color: var(--white);
         text-align: start;
@@ -589,32 +591,28 @@
     .groupRaquetas-carrusel > div {
         margin-top: 0px;
     }
-    .siguientecarrusel {
-        right: 32%;
-    
-    }
     .groupRaquetas-slider {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         gap: 12px;
-        padding-left: 5px;
+        padding-left: 47px;
         overflow: hidden;
         white-space: nowrap;
         margin-top: 20px;
     }
     .groupRaquetas-slider > div > img {
-        width: 90px;
+        width: 70px;
     }
     .pelotaB{
         display: none;
     }
     .antescarrusel{
-        left: 19%;
+        left: 13%;
     }
     .siguientecarrusel{
-        right: 55%;
+        right: 60%;
     }
 }
 
@@ -650,7 +648,4 @@
         font-size: 45.5px;
     }
 
-    .rectangulo {
-        padding: 13px 30px;
-    }
 }
