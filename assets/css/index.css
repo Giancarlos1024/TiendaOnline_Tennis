@@ -98,12 +98,13 @@
 .groupTennis{
     width: 100%;
     background-image: url("../img/group.jpg");
+    /* background-size: cover; */
     height: 785px;
     margin: 0 0 4px;
     padding: 25px 94px 276px 36px;
     object-fit: contain;
     background-repeat: no-repeat;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); */
     background-position: -50px 0px;
 }
 
@@ -155,6 +156,11 @@
     align-items: center;
     font-weight: bold;
 }
+.rectangulo:hover{
+    background-color: var(--white);
+    color: var(--dark);
+}
+
 .rectangulo > img{
     width: 20px;
 }
@@ -219,6 +225,11 @@
     color: #273048;
     font-weight: bold;
 }
+.groupAccesoriosHistoria > a:hover{
+    background-color: var(--white);
+    color: var(--dark);
+}
+
 
 .groupAccesoriosHistoria > a > span{
     /* background-color: #cbe346; */
@@ -374,6 +385,7 @@
 
 .footerTennis{
     background-color: var(--sickly-yellow);
+    background-size: cover
 }
 
 .footerTennis > div{
@@ -586,8 +598,10 @@
     }
 
     .groupTennis {
+        width: 100%;
         padding: 25px 94px 276px 36px;
-        background-position: -50px 0px;
+        background-size: cover;
+        background-position: 0px 0px;
     }
 
     .pelotaB {
